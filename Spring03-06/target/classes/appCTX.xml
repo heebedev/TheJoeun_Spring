@@ -21,7 +21,7 @@
 	
 	<bean id="studentInfo1" class="com.springlec.spring0306.StudentInfo">
 		<property name="student">
-			<ref bean="student1"/
+			<ref bean="student1"/>
 		</property>
 	
 	</bean>
