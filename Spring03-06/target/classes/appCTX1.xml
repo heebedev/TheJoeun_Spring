@@ -1,7 +1,35 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <beans xmlns="http://www.springframework.org/schema/beans"
 	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:c="http://www.springframework.org/schema/c"
+	xmlns:p="http://www.springframework.org/schema/p"
 	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+	<bean id="student3" class="com.springlec.spring0306.Student">
+		<constructor-arg value="관우"/>
+		<constructor-arg value="30"/>
+		<constructor-arg>
+			<list>
+				<value>검도(관우)</value>
+				<value>경마(관우)</value>
+				<value>독서(관우)</value>
+			</list>
+		
+		</constructor-arg>
+		
+		<property name="height">
+			<value>180</value>
+		</property>
+		<property name="weight" value="80"/>
+		
+	</bean>
+	
+
+	<bean id="family" class="com.springlec.spring0306.Family" c:papaName="아빠" c:mamaName="엄마" p:brotherName="오빠" p:sisterName="언니"/>
+	
+	
+
+
 
 
 </beans>
