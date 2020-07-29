@@ -1,0 +1,11 @@
+package com.springlec.spring0305;
+
+public class Pencil2B implements Pencil {
+
+	@Override
+	public void usePen() {
+		// TODO Auto-generated method stub
+
+	}
+
+}

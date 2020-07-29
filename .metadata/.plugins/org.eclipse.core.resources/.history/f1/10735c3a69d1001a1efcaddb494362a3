@@ -1,0 +1,9 @@
+package com.springlec.spring0305;
+
+public class Pencil {
+	
+	public void use() {
+		
+	}
+
+}

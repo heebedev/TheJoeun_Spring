@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+
+	<!-- calculator라는 인스턴스를 미리 만든다.  -->
+	<!-- 다른패키지에 있어도 가져와서 쓸 수 있다. 그래서 패키지 이름이 중요하다. -->
+	<bean id="calculator" class="com.springlec.spring0302.Calculator" />
+	
+	<bean id="myCalculator" class="com.springlec.spring0302.MyCalculator">
+		<property name="calculator">
+			<ref bean="calculator"/>
+			<!-- reference bean이 calculator라 myCalculator가 실행되면 자동으로 calculator랑 연결 -->
+		</property>
+		<property name="firstNum" value="10"/>
+		<property name="secondNum" value="2"/>
+	</bean>
+
+
+
+</beans>
