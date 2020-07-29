@@ -706,3 +706,7 @@ org.eclipse.core.runtime.CoreException: Launch configuration MainClass (3) refer
 2020-07-29 16:45:45,046 [Worker-182: Launching MainClass (4)] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
 2020-07-29 16:45:45,047 [Worker-182: Launching MainClass (4)] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
 2020-07-29 16:45:45,047 [Worker-182: Launching MainClass (4)] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/tj/Documents/SEUNGHEE/SPRING/Spring03-06/src/test/resources
+2020-07-29 16:48:54,414 [Worker-179: Launching MainClass (4)] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2020-07-29 16:48:54,414 [Worker-179: Launching MainClass (4)] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 2 resources
+2020-07-29 16:48:54,415 [Worker-179: Launching MainClass (4)] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2020-07-29 16:48:54,415 [Worker-179: Launching MainClass (4)] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/tj/Documents/SEUNGHEE/SPRING/Spring03-06/src/test/resources

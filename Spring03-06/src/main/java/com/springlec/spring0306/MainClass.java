@@ -38,6 +38,14 @@ public class MainClass {
 			System.out.println("student1 != studnet2");
 		}
 		
+		
+		Family family = ctx.getBean("family", Family.class);
+		
+		System.out.println(family.getPapaName());
+		System.out.println(family.getMamaName());
+		System.out.println(family.getBrotherName());
+		System.out.println(family.getSisterName());
+		
 		ctx.close();
 		
 		
