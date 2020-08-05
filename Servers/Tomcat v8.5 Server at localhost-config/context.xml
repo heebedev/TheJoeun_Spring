@@ -26,11 +26,8 @@
     <Manager pathname="" />
     -->
     
-    
-	<!--지금은 DBCP2방식... 나중에 Srpingjdbc  마지막에 MyBatis -->   
-	
     <Resource
-    	name = "jdbc/MVC"
+    	name = "jdbc/blgy"
     	auth = "Container"
     	type = "javax.sql.DataSource"
     	maxTotal = "8"
@@ -39,10 +36,7 @@
     	username = "root"
     	password = "qwer1234"
     	driverClassName = "com.mysql.cj.jdbc.Driver"
-    	url = "jdbc:mysql://localhost:3306/MVC?serverTimezone=Asia/Seoul&amp;characterEncoding=utf8&amp;useSSL=false"
+    	url = "jdbc:mysql://119.207.169.213:3306/blgy?serverTimezone=Asia/Seoul&amp;characterEncoding=utf8&amp;useSSL=false"
    	></Resource>
-
-    
-    
-    
+   	
 </Context>

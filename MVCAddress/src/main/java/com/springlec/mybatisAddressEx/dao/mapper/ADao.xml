@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+	PUBLIC "-//mybatis.org/DTD Mapper 3.0//EN"
+	"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+	
+<mapper namespace="com.springlec.mybatisAddressEx.dao.ADao">
+	<!-- id = IDao.java에 있는 listDao resultType은 Dto 알려줌 -->
+	<select id="addressDao" resultType="com.springlec.mybatisAddressEx.dto.AddDto">
+		SELECT * FROM ADDRESS ORDER BY SEQ
+	</select>
+	
+	<select id="detailDao" resultType="com.springlec.mybatisAddressEx.dto.AddDto">
+		SELECT * FROM ADDRESS WHERE SEQ = #{param1}
+	</select>
+	
+	<insert id="writeDao">
+		INSERT INTO address (name, telno, address, email, relation) VALUES (#{param1}, #{param2}, #{param3}, #{param4}, #{param5})
+	</insert>
+	
+	<update id="updateDao">
+		UPDATE address SET name = #{param2}, telno = #{param3}, address = #{param4}, email = #{param5}, relation = #{param6} WHERE seq = #{param1}
+	</update>
+		
+	<delete id="deleteDao">
+		DELETE FROM address WHERE seq = #{param1}
+	</delete>
+	
+	<select id="listQuery" parameterType = "String" resultType="com.springlec.mybatisAddressEx.dto.AddDto">
+		SELECT * FROM address WHERE ${param1} LIKE CONCAT('%', #{param2}, '%')
+	
+	</select>
+
+</mapper>

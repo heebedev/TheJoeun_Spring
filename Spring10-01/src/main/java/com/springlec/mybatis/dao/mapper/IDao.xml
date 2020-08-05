@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+	PUBLIC "-//mybatis.org/DTD Mapper 3.0//EN"
+	"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+	
+<mapper namespace="com.springlec.mybatis.dao.IDao">
+	<!-- id = IDao.java에 있는 listDao resultType은 Dto 알려줌 -->
+	<select id="listDao" resultType="com.springlec.mybatis.dto.BDto">
+		SELECT * FROM MVC_BOARD ORDER BY BID
+	</select>
+	
+	 <insert id="writeDao">
+		INSERT INTO MVC_BOARD (BNAME, BTITLE, BCONTENT, BDATE) VALUES (#{param1}, #{param2}, #{param3}, NOW())
+	</insert>
+		
+	<select id="contentViewDao" resultType="com.springlec.mybatis.dto.BDto">
+		SELECT * FROM MVC_BOARD WHERE BID = #{param1}
+	</select>
+	
+	<update id="modifyDao">
+		UPDATE MVC_BOARD SET BNAME = #{param1}, BTITLE = #{param2}, BCONTENT = #{param3} WHERE BID = #{param4}
+		
+	</update>
+	
+	<delete id="deleteDao">
+		DELETE FROM MVC_BOARD WHERE BID = #{param1}
+	</delete> 
+
+</mapper>

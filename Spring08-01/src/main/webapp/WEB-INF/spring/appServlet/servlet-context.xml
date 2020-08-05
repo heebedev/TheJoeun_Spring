@@ -21,7 +21,28 @@
 		<beans:property name="suffix" value=".jsp" />
 	</beans:bean>
 	
+	
+	
 	<context:component-scan base-package="com.springlec.board" />
+	
+	<!-- class의 패키지 이름이 중요하다 --> 
+	
+	<beans:bean name="list" class="com.springlec.board.command.BListCommand">
+	</beans:bean>
+	
+	<beans:bean name="write" class="com.springlec.board.command.BWriteCommand">
+	</beans:bean>
+	
+	<beans:bean name="content" class="com.springlec.board.command.BContentCommand">
+	</beans:bean>
+	
+	<beans:bean name="modify" class="com.springlec.board.command.BModifyCommand">
+	</beans:bean>
+	
+	<beans:bean name="delete" class="com.springlec.board.command.BDeleteCommand">
+	</beans:bean>
+	
+	<beans:bean name="dao" class="com.springlec.board.dao.BDao"></beans:bean>
 	
 	
 	
