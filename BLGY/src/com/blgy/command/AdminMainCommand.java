@@ -11,7 +11,7 @@ public class AdminMainCommand implements BCommand {
 	public void execute(HttpServletRequest request, HttpServletResponse response) {
 		// TODO Auto-generated method stub
 		
-ADao adao = new ADao();
+		ADao adao = new ADao();
 		
 		String countTodayUser = adao.AdminMainCountUser();
 		String countTodayProduct = adao.AdminMainCountProduct();
